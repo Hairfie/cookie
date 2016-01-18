@@ -133,7 +133,7 @@ function serialize(name, val, options) {
     pairs.push('Path=' + opt.path);
   }
 
-  if (opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+  if (opt.expires) pairs.push('Expires=' + opt.expires);
   if (opt.httpOnly) pairs.push('HttpOnly');
   if (opt.secure) pairs.push('Secure');
   if (opt.firstPartyOnly) pairs.push('First-Party-Only');
